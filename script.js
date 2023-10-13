@@ -1,26 +1,3 @@
-<!-- Flatpickr - Calendar -->
-<script>
-  var Webflow = Webflow || [];
-  Webflow.push(function () {
-    document.getElementsByClassName('date').flatpickr({
-      enableTime: false,
-      dateFormat: 'F d, Y',
-      disable: [
-        function(date) {
-          // return true to disable
-          return (date.getDay() === 0 || date.getDay() === 6);
-        }
-      ],
-      locale: {
-        "firstDayOfWeek": 7 // start week on Monday
-      }
-      // This outputs in the format of Month Day, Year HH:MM
-      // There are a LOT of ways to format and it's super easy to swap. 
-      // See here: https://flatpickr.js.org/formatting/
-    });
-  });
-</script>
-  
 <!-- Reparse HTML for imported Code -->
 <script>
   // if you use a different value for the ID of your embed
